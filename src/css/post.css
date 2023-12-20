@@ -1,0 +1,11 @@
+.tags-container {
+    white-space: nowrap;
+    /* 防止换行 */
+}
+
+.tags-container li {
+    display: inline-block;
+    /* 水平显示 */
+    margin-right: 10px;
+    /* 标签之间的间距 */
+}

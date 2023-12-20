@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="./src/css/nav.css">
     <link rel="stylesheet" href="./src/css/body.css">
+    <link rel="stylesheet" href="./src/css/post.css">
 </head>
 
 <body>
@@ -34,12 +35,13 @@
         </div>
     </div>
     <!-- 文章列表 -->
-    <div class="post">
-        <tr>
-			<th>Name</th>
-			<th>Age</th>
-			<th>Country</th>
-		</tr>
+    <div class="postWeb">
+        <!-- 搜索 -->
+        <div class="search">
+            <button>搜索</button>
+            <input type="text" id="search-bar">
+        </div>
+        <ul id="postList" class="postList"></ul>
     </div>
 </body>
 
