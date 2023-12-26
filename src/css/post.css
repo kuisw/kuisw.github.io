@@ -1,11 +1,55 @@
 .tags-container {
-     /* 防止换行 */
+    /* 防止换行 */
     white-space: nowrap;
 }
 
 .tags-container li {
-     /* 水平显示 */
+    /* 水平显示 */
     display: inline-block;
-   /* 标签之间的间距 */
+    /* 标签之间的间距 */
     margin-right: 10px;
+}
+
+/* 帖子列表 */
+.postList {
+    /* border: 1px solid black; */
+}
+
+/* 单个帖子 */
+.post {
+    border: 1px solid #f0f0f2;
+    padding: 20px 0;
+    height: 140px;
+}
+
+/* 标题 */
+.post h3 {
+    font-size: 18px;
+}
+
+/* 介绍 */
+.post-intro {
+    margin-top: 4px;
+    color: #555666;
+}
+
+/* 标签 */
+.tags-container {
+    margin-top: 10px;
+    color: #555666;
+}
+
+/* 电脑端 */
+@media only screen and (min-width: 600px) {
+    .postList {
+        width: 70%;
+        margin: 0 0 0 10px;
+    }
+}
+
+/* 手机端 */
+@media only screen and (max-width: 600px) {
+    .post {
+        height: 100px;
+    }
 }
