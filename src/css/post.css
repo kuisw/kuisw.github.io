@@ -19,7 +19,18 @@
 .post {
     border: 1px solid #f0f0f2;
     padding: 20px 0;
-    height: 140px;
+    height: 110px;
+}
+
+/* 封面 */
+.post-cover {
+    border: 1px solid black;
+    height: 100px;
+    width: 170px;
+    float: left;
+    margin: 10px 10px 0 0;
+    background-size: cover;
+    background-position: center center;
 }
 
 /* 标题 */
@@ -39,17 +50,34 @@
     color: #555666;
 }
 
-/* 电脑端 */
+/* 
+电脑端
+ */
 @media only screen and (min-width: 600px) {
     .postList {
         width: 70%;
         margin: 0 0 0 10px;
     }
+
+    /* 封面 */
+    .post-cover {
+        margin: 5px 10px 0 0;
+    }
 }
 
-/* 手机端 */
+/* 
+手机端
+ */
 @media only screen and (max-width: 600px) {
+    /* 单个帖子 */
     .post {
-        height: 100px;
+        height: 80px;
+    }
+
+    /* 封面 */
+    .post-cover {
+        border: 1px solid black;
+        height: 55px;
+        width: 75px;
     }
 }

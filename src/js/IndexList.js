@@ -2,11 +2,13 @@ var PostList = [
     {
         "id": 1,
         "title": "首页",
-        "Introduction": "首页首页首页首页首页首页首页"
+        "Introduction": "首页首页首页首页首页首页首页",
+        "cover":"test.jpg"
     }, {
         "id": 2,
         "title": "测试2",
-        "Introduction": "测试2测试2测试2测试2测试2测试2测试2测试2"
+        "Introduction": "测试2测试2测试2测试2测试2测试2测试2测试2",
+        "cover":"test.jpg"
     }
 ]
 
@@ -16,6 +18,12 @@ window.onload = function () {
         var post = PostList[i];
         var liElement = document.createElement("li");
         liElement.classList.add("post")
+
+        // 创建封面元素
+        var coverElement = document.createElement("p");
+        coverElement.style.backgroundImage = "url('src/assets/indexCover/"+post.cover+"')";
+        coverElement.classList.add("post-cover")
+        liElement.appendChild(coverElement);
 
         // 创建标题元素
         var titleElement = document.createElement("h3");

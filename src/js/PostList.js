@@ -6,7 +6,8 @@ var PostList = [
         "tags": [
             "#vue",
             "#js"
-        ]
+        ],
+        "cover":"test.jpg"
     }, {
         "id": 2,
         "title": "测试2",
@@ -14,7 +15,8 @@ var PostList = [
         "tags": [
             "#c++",
             "#测试"
-        ]
+        ],
+        "cover":"test.jpg"
     }
 ]
 
@@ -24,6 +26,12 @@ window.onload = function () {
         var post = PostList[i];
         var liElement = document.createElement("li");
         liElement.classList.add("post")
+
+        // 创建封面元素
+        var coverElement = document.createElement("p");
+        coverElement.style.backgroundImage = "url('../assets/articleCover/"+post.cover+"')";
+        coverElement.classList.add("post-cover")
+        liElement.appendChild(coverElement);
 
         // 创建标题元素
         var titleElement = document.createElement("h3");
