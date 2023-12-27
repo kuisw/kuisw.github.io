@@ -31,7 +31,7 @@ a {
         margin: auto;
         height: 300px;
         /* aspect-ratio: 3/1; */
-        background-image: url(../assets/header.jpg);
+        background-image: url(../assets/background/header.jpg);
         background-position: bottom;
         background-repeat: no-repeat;
         /* background-size: cover; */
@@ -80,7 +80,7 @@ a {
     }
 
     .web-header {
-        background-image: url(../assets/header-mph.jpg);
+        background-image: url(../assets//background/header-mph.jpg);
         background-size: cover;
         height: 200px;
     }
