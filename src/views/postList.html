@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="../css/nav.css">
     <link rel="stylesheet" href="../css/body.css">
     <link rel="stylesheet" href="../css/post.css">
+    <link rel="stylesheet" href="../css/search.css">
+    <!-- 搜索图标 -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/c/font_4156699_i9rfozb6ac.css">
 </head>
 
 <body>
@@ -37,13 +40,20 @@
     <!-- 文章列表 -->
     <div class="postWeb">
         <!-- 搜索 -->
-        <div class="search">
-            <input type="text" id="search-bar" placeholder="搜索关键词">
-            <button>搜索</button>
+        <div class="searchBar">
+            <div class="icon">
+                <!-- <i class="iconfont icon-sousuoxiao"></i> -->
+                <svg t="1703775061248" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="20229" width="200" height="200"><path d="M512 768c-183.466667 0-328.533333-85.333333-426.666667-256 98.133333-170.666667 243.2-256 426.666667-256s328.533333 85.333333 426.666667 256c-98.133333 170.666667-243.2 256-426.666667 256z m8.533333-426.666667c-128 0-256 55.466667-328.533333 170.666667 72.533333 115.2 200.533333 170.666667 328.533333 170.666667s238.933333-55.466667 311.466667-170.666667c-72.533333-115.2-183.466667-170.666667-311.466667-170.666667z m-8.533333 298.666667c-72.533333 0-128-55.466667-128-128s55.466667-128 128-128 128 55.466667 128 128-55.466667 128-128 128z m0-85.333333c25.6 0 42.666667-17.066667 42.666667-42.666667s-17.066667-42.666667-42.666667-42.666667-42.666667 17.066667-42.666667 42.666667 17.066667 42.666667 42.666667 42.666667z" fill="#1e90ff" p-id="20230"></path></svg>
+            </div>
+            <div class="textInput">
+                <input type="text" class="inp" placeholder="请输入搜索关键词">
+                <button class="goBtn">
+                    <i class="iconfont icon-sousuoxiao"></i>
+                </button>
+            </div>
         </div>
-        <div id="search-results">
-            <ul id="postList" class="articlePost" class="postList"></ul>
-        </div>
+        <!-- 帖子列表 -->
+        <ul id="postList" class="articlePost" class="postList"></ul>
     </div>
 </body>
 

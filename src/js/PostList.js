@@ -7,16 +7,16 @@ var PostList = [
             "#vue",
             "#js"
         ],
-        "cover":"test.jpg"
+        "cover": "test.jpg"
     }, {
         "id": 2,
         "title": "测试2",
-        "Introduction": "测试2测试2测试2测试2测试2测试2测试2测试2",
+        "Introduction": "测试2测试2测试2测试2测试2测试2测试2测试2测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试测试",
         "tags": [
             "#c++",
             "#测试"
         ],
-        "cover":"test.jpg"
+        "cover": "test.jpg"
     }
 ]
 
@@ -29,7 +29,7 @@ window.onload = function () {
 
         // 创建封面元素
         var coverElement = document.createElement("p");
-        coverElement.style.backgroundImage = "url('../assets/articleCover/"+post.cover+"')";
+        coverElement.style.backgroundImage = "url('../assets/articleCover/" + post.cover + "')";
         coverElement.classList.add("post-cover")
         liElement.appendChild(coverElement);
 
@@ -45,7 +45,7 @@ window.onload = function () {
         liElement.appendChild(introElement);
 
         // 创建tags的ul元素
-        var tagsElement = document.createElement("ul"); 
+        var tagsElement = document.createElement("ul");
         tagsElement.classList.add("tags-container");
         for (var j = 0; j < post.tags.length; j++) {
             var tag = post.tags[j];
@@ -57,4 +57,18 @@ window.onload = function () {
 
         postListContainer.appendChild(liElement);
     }
+
+    /* 
+    搜索框的css代码
+    */
+    // 获取元素
+    let searchIcon = document.querySelector(".icon")
+    let clearIcon = document.querySelector(".clear")
+    let searchBar = document.querySelector(".searchBar")
+    let inp = document.querySelector(".inp")
+
+    // 点击，切换类=》动态设置宽度，实现展开
+    searchIcon.addEventListener("click", () => {
+        searchBar.classList.toggle("changeWidth")
+    })
 }

@@ -11,20 +11,20 @@
 }
 
 /* 帖子列表 */
-.postList {
-    /* border: 1px solid black; */
-}
+/* .postList {
+     border: 1px solid black;
+} */
 
 /* 单个帖子 */
 .post {
     border: 1px solid #f0f0f2;
-    padding: 20px 0;
+    padding: 20px 10px;
     height: 110px;
 }
 
 /* 封面 */
 .post-cover {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 100px;
     width: 170px;
     float: left;
@@ -40,13 +40,18 @@
 
 /* 介绍 */
 .post-intro {
-    margin-top: 4px;
+    margin: 4px 0;
     color: #555666;
+    overflow: hidden;
+    height: 41.6px;
 }
 
 /* 标签 */
 .tags-container {
-    margin-top: 10px;
+    /* margin-top: auto; */
+    /* margin: auto 0 10px 0 ; */
+    position: relative;
+    bottom: 0;
     color: #555666;
 }
 
@@ -59,6 +64,10 @@
         margin: 0 0 0 10px;
     }
 
+    .articlePost {
+        width: 70%;
+    }
+
     /* 封面 */
     .post-cover {
         margin: 5px 10px 0 0;
@@ -69,6 +78,7 @@
 手机端
  */
 @media only screen and (max-width: 600px) {
+
     /* 单个帖子 */
     .post {
         height: 80px;
@@ -76,8 +86,14 @@
 
     /* 封面 */
     .post-cover {
-        border: 1px solid black;
+        /* border: 1px solid black; */
         height: 55px;
         width: 75px;
+        margin: 20px 0;
+    }
+
+    .post-intro {
+        
+        height: 20.8px;
     }
 }
