@@ -25,8 +25,13 @@
     font-size: 30px;
 }
 
+.iconSearch {
+    width: 25px;
+    height: 25px;
+}
+
 .textInput {
-    width: 320px;
+    width: 220px;
     height: 60px;
     position: absolute;
     top: 0;
@@ -55,7 +60,7 @@
     border-radius: 8px;
     outline: none;
     border: none;
-    color: dodgerblue;
+    color: #1e90ff;
     /* box-shadow: 0 0 2px rgba(0, 0, 0, .4); */
     /* background: linear-gradient(skyblue, deepskyblue); */
     cursor: pointer;
